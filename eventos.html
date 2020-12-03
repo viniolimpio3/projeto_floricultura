@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dona Florinda | Eventos</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">	</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script type="text/javascript">
+			function mostrarTexto(){
+				//Evento 1
+				
+				document.getElementById("Texto").innerHTML = "Realizamos Casamentos. Nossa empresa veio para ajudar você a realizar seu casamento de uma forma inesquecivel";	
+				document.getElementById()		
+
+			}
+			function mostrarTexto2(){	
+				//Evento 2
+				
+				document.getElementById("Texto2").innerHTML = "Realizamos festas em geral, seja ela Aniversário, Chá de Bebe, Etc. Temos o compromisso com o êxito do Evento de nossos clientes.";
+				
+			}	
+			function mostrarTexto3(){
+				//Evento 3
+				
+				document.getElementById("Texto3").innerHTML = "Realizamos Enterros, a Importância da Decoração de Um Enterro é Imensa, Para que a Homenagem a Seu Ente Querido Seja Lembrada.";
+				
+			}
+
+
+			
+		</script>
+
+		<style>
+			.card img {
+			    height: 230px !important;
+			}
+		</style>
+	</head>
+	<body>
+		 <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="image-nav" src="img/logo.png">Dona Florinda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="suporte.html">Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item car">
+                    <a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" class="img-fluid carrinho"></a>
+                </li>
+                
+              </ul>
+          </div>
+      </div>
+    </nav>
+		
+		<div class="container">
+			<h1 class="text-center" >Eventos</h1>
+		</div>	
+		<br>
+		<div class="container">
+			<div class="row cartao">
+		
+				<div class="col-sm-4">
+					<div class="container">
+						<div class="card">
+							<img src="img/casamentos.jpg">
+						  	<div class="card-body">
+							    <h5 class="card-title">Casamento</h5>						    
+						  	</div>
+						</div>
+						<br>
+						<form>
+							<button id="sm1" type="button" class="mb rounded mx-auto d-block btn btn-light btn-block" onclick="mostrarTexto()">Saber Mais</button>
+						</form>
+						<br>
+						<h5 class="text-center" id="Texto"></h5>		
+					</div>	
+				</div>
+				<div class="col-sm-4">
+					<div class="container">
+						<div class="card">
+							<img src="img/festas.jpg">
+						  	<div class="card-body">
+						  		<h5 class="card-title">Festas</h5>
+						  	</div>
+						</div>
+						<br>
+						<form>
+							<button id="sm2" type="button" class="mb rounded mx-auto d-block btn btn-light btn-block" onclick="mostrarTexto2()">Saber Mais</button>
+							<br>
+							<h5 class="text-center" id="Texto2"></h5>
+						</form>		
+					</div>	
+				</div>
+				<div class="col-sm-4">
+					<div class="container">
+						<div class="card">
+							<img src="img/enterros.jpg">
+						  	<div class="card-body">
+							    <h5 class="card-title">Enterros</h5>
+						  	</div>
+						</div>
+						<br>
+						<form>
+							<button id="sm3" type="button" class="mb rounded mx-auto d-block btn btn-light btn-block" onclick="mostrarTexto3()">Saber Mais</button>
+							<br>
+							<h5 class="text-center" id="Texto3"></h5>
+						</form>
+						<br>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6">
+					<div class="container">			
+						<a class="mb rounded mx-auto d-block btn btn-dark" href="fotos_eventos.html" role="button">Ver Fotos Eventos</a>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="container">
+						<a class="mb rounded mx-auto d-block btn btn-dark " href="agendar_eventos.html" role="button">Agendar Evento</a>
+					</div>
+				</div>
+
+			</div>
+			<br><br>
+		</div>
+		<!-- Footer -->
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://www.facebook.com/">
+                  <img src="img/face2.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://www.instagram.com/">
+                  <img src="img/insta.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://twitter.com/">
+                  <img src="img/tw.png">
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4 texto-rodape">
+            <p class=" text-center">Feito por Vinícius, Vitor, Gabriel e Pedro</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+		
+	</body>	
+</html>

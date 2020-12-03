@@ -1,0 +1,51 @@
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.image-nav{
+	max-width: 100px;
+}
+/*li.nav-item a.nav-link{
+	color: #222 !important;
+	font-size: 20px;
+    margin: 5px;
+}*/
+li.nav-item a.nav-link:hover{
+	color:#cecece;
+	transition:1s;
+}
+img.carrosel{
+	width:100%; 
+	max-height:550px;
+}
+
+.carrinho{
+	max-width: 25px !important;
+
+}
+.car{
+	margin-left: 10%;
+}
+
+nav.navbar{
+	margin-bottom:2% !important;
+}
+footer{
+	background: #cecece;
+}
+.img-rodape{
+	max-width: 30px !important;
+}
+
+
+.card img {
+    height: 230px !important;
+}
+.rodape .col-sm-4 img{
+	height: 28px !important;
+	width: 28px !important;
+}
+.rodape{
+	padding-top: 15px;
+	background: #cec;
+}

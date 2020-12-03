@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">	</script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	
+  <script type="text/javascript">
+    
+  </script>
+
+	<title>Dona Florinda | Eventos</title>
+</head>
+<body>
+	<!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="image-nav" src="img/logo.png">Dona Florinda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="suporte.html">Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item car">
+                    <a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" class="img-fluid carrinho"></a>
+                </li>
+                
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <h1 class="text-center">Agendar Evento</h1>
+    <br>
+    <div class="container">
+      <form action="" method="get">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Nome Completo</label>
+            <input type="string" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">CPF</label>
+            <input type="numbers" class="form-control" id="inputPassword4" placeholder="000.000.000-00">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Endereço">
+        </div>
+          <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputTelefone">Telefone</label>
+            <input type="phone" class="form-control" id="inputEmail4" placeholder="(00) 0000-0000">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Data</label>
+            <input type="date" class="form-control" id="inputEmail4" placeholder="Nome Completo">
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Estado</label>
+            <select id="inputState" class="form-control">
+              <option selected>Escolher</option>
+              <option>AC</option>
+              <option>AL</option>
+              <option>AP</option>
+              <option>AM</option>
+              <option>BA</option>
+              <option>CE</option>
+              <option>DF</option>
+              <option>ES</option>
+              <option>GO</option>
+              <option>MA</option>
+              <option>MT</option>
+              <option>MS</option>
+              <option>MG</option>
+              <option>PA</option>
+              <option>PB</option>
+              <option>PR</option>
+              <option>PE</option>
+              <option>PI</option>
+              <option>RJ</option>
+              <option>RN</option>
+              <option>RS</option>
+              <option>RO</option>
+              <option>RR</option>
+              <option>SC</option>
+              <option>SP</option>
+              <option>SE</option>
+              <option>TO</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">CEP </label>
+            <input type="text" class="form-control" id="inputZip" placeholder="">
+          </div>
+        </div>
+        <br>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" required="" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Eu Li e Concordo Com Os Termos do Contrato.
+            </label>
+          </div>
+        </div>
+      </div>
+    <br>
+    <input class="btn btn-block btn-dark" id="agendar" class="btn btn-primary" type="submit" value="Agendar" >  
+    <br><br>
+  </form>
+</div>  
+<!-- Footer -->
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://www.facebook.com/">
+                  <img src="img/face2.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://www.instagram.com/">
+                  <img src="img/insta.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://twitter.com/">
+                  <img src="img/tw.png">
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4 texto-rodape">
+            <p class=" text-center">Feito por Vinícius, Vitor, Gabriel e Pedro</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+  $(document).ready(function() {
+        
+        $('#agendar').click(function() {//onclick botão agendar, executar função ....
+          if($('#gridCheck').val() != null ){
+            alert('Agendado com sucesso!');
+          }else{
+            alert('Você precisa ler e concordar com os termos para prosseguir...');
+          }
+
+            
+      });
+
+    });
+
+
+</script>

@@ -1,0 +1,4 @@
+email -> loucura@gmail.com    senha ->  senha1
+email -> beicola@gmail.com    senha ->  senha
+email -> chucrute@gmail.com   senha ->  rato
+email -> paiAlfa@gmail.com    senha ->  fermento

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dona Florinda | Cadastro</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">	</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+	</head>
+	<body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="image-nav" src="img/logo.png">Dona Florinda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="suporte.html">Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item car">
+                    <a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" class="img-fluid carrinho"></a>
+                </li>
+                
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <h1 class="text-center">Cadastre-se</h1>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="container">
+          <h2 class="text-center" id="title-confirma" style="display: none;">Cadastro efetuado com sucesso!!</h2>
+          <div id="add" class="text-center">
+            
+          </div>
+          <form name="" id="cadastro" action="" method="post">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" required="" class="form-control" name="nome" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" required="" name="email" id="email" class="form-control" placeholder="Digite sua email">
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="desc">Descrição</label>
+                <input type="text" name="desc" id="desc" placeholder="Digite sua Descrição(não obrigatório)" class="form-control">
+              </div>
+              <div class="col">
+                <label for="tel">Telefone</label>
+                <input type="text" name="tel" id="tel" placeholder="Digite seu telefone" class="form-control">
+              </div>
+            </div>
+            <br>
+            <div class="form-row">
+              <div class="col">
+                <label for="doc">Digite seu Documento</label>
+                <input type="text" id="doc" name="doc" placeholder="não obrigatório" class="form-control">
+              </div>
+              <div class="col">
+                <label for="sexo">Seu sexo:</label>     
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="masc" checked="">
+                  <label class="form-check-label" for="sexoM">
+                    Masculino
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="fem">
+                  <label class="form-check-label" for="sexoF">
+                    Feminino
+                  </label>
+                </div>    
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="senha1">Digite sua senha</label>
+                <input type="password" id="senha1" name="senha1" placeholder="Digite sua senha" class="form-control">
+              </div>
+              <div class="col">
+                <label for="senha2">Confirme sua senha</label>
+                <input type="password" id="senha2" name="senha2" placeholder="Confirme sua senha" class="form-control">
+              </div>
+            </div>
+            <br>
+            
+            <!-- Sempre que tiver um botão type submit, executa uma action (php) da tag form -->     
+            <button type="submit" id= "enviar" class="btn-block mb rounded mx-auto d-block btn btn-dark " >Enviar</button>
+                            
+          </form> 
+          <br>
+          <div class="container">     
+            <div id="resposta"> 
+              <p id="carrega" style="display: none;">Carregando...</p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-4">
+                <a href="https://www.facebook.com/">
+                  <img src="img/face2.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://www.instagram.com/">
+                  <img src="img/insta.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a href="https://twitter.com/">
+                  <img src="img/tw.png">
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4 texto-rodape">
+            <p class=" text-center">Feito por Vinícius, Vitor, Gabriel e Pedro</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+
+
+	</body>	
+</html>
+<script>
+    $(document).ready(function() {
+        
+        $('#enviar').click(function() {//onclick botão enviar, executar função ....
+ 
+            var dados = $('#cadastro').serialize();//Dados de todos os campos do form id produto
+            
+
+            if($('#senha1').val() == $('#senha2').val() && $('#senha1').val() !="") {
+
+            
+              $.ajax({
+                  method: 'POST',
+                  url: 'cadastro.php',
+                  data: dados,
+
+                  beforeSend: function() {
+                    $("#carrega").css({'display':'block'});
+
+                  }
+              })
+
+              .done(function(msg){//parâmetro msg pega um echo do arquivo php. Caso a conexão dê certo
+
+                $("#carrega").css({'display':'none'});
+                $('#cadastro').css({'display':'none'});
+                $('#title-confirma').css({'display':'block'});
+              	var user = JSON.parse(msg);
+
+                var exibir = '<strong>Nome do User</strong>: ' + user.Nome + "<br>";
+                exibir += "<strong>Email</strong>: " + user.email + "<br>";
+                exibir += "<strong>Senha</strong>: " + user.senha + "<br>";
+                exibir += "<strong>Descrição</strong>:  " + user.Descricao + "<br>";
+                exibir += "<strong>Sexo</strong>: " + user.Sexo + "<br>";
+                exibir += "<strong>Documento</strong>:  " + user.Doc + "<br>";
+                exibir += "<strong>Telefone</strong>: " + user.Telefone + "<br>";
+
+                $('h2').html('Cadastro efetuado com sucesso!!');
+                $("#add").append(exibir);
+
+
+
+              })
+
+              .fail(function(){
+                $("#carrega").css({'display':'none'});
+                alert("Preencha todos os Campos");
+              })
+
+              return false;//serve para manter a mensagem na tela!
+            }else{
+              alert('Sua senha não confirma com a anterior.');
+            }  
+      });
+
+    });
+
+</script>

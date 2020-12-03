@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Dona Florinda</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin		="anonymous">	</script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- DEPOIS COLOCAR NO STYLE.CSS !!!!!!!!!!! -->
+    <style>
+      
+      
+    </style>
+		
+	</head>
+	<body >
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+          <a class="navbar-brand" href="index.html"><img class="image-nav" src="img/logo.png">Dona Florinda</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="produtos.html">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="suporte.html">Suporte</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="login.html">Login</a>
+                </li>
+                <li class="nav-item car">
+                    <a class="nav-link" href="carrinho.html"><img src="img/carrinho.png" class="img-fluid carrinho"></a>
+                </li>
+                
+              </ul>
+          </div>
+      </div>
+    </nav>
+        <div id="add" class=" container">
+      <div class="row">
+        <div class="col-sm-4">
+
+          <div class="card" style="width: 18rem;">
+            <img src="img/plumeria.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Pluméria</h5>
+              <p class="card-text">A pluméria que é uma nativa do Brasil, Caribe e América Central, vem em muitas variedades. A flor pertence à família dogbane, Apocynaceae e é conhecida por seu aroma fascinante e beleza. A pluméria tem flores de tamanho médio que vem em uma variedade de cores vibrantes, como rosa, vermelho, amarelo e mais. </p>
+              <p>R$ 50,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto1" action="" method="post">
+                <input type="number" name="qtdProduto1" min="0" id="qtdProduto1" class="form-control"><br>
+                <button id="enviarCarrinho1" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-4">    
+          <div class="card" style="width: 18rem;">
+            <img src="img/crisantemo.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Crisantêmo</h5>
+              <p class="card-text">Carolus Linnaeus, pai da taxonomia moderna, deu esta linda flor o nome que significa flor de ouro, em grego. Estas flores vêm em um número variados de formas, estas podem ser botões, pomposas, decorativas ou como margarida. Embora amarela seja cor tradicional da flor crisântemo, estas podem ser também encontradas em outras cores, a incluir vermelho, branco e roxo. A flor simboliza otimismo, vida longa, fidelidade e alegria.</p>
+              <p>R$ 55,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto2" action="" method="post">
+                <input type="number" name="qtdProduto2" min="0" id="qtdProduto2" class="form-control"><br>
+                <button id="enviarCarrinho2" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-sm-4">       
+          <div class="card" style="width: 18rem;">
+            <img src="img/dalia.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Dália</h5>
+              <p class="card-text">Nomeada após Anders Dahl, um botânico, esta planta perene espessa tuberosa é geralmente encontrada no México, Colômbia, e América Central. Esta flor tem mais de 30 espécies. E um detalhe interessante sobre a mesma é que vem em uma variedade enorme de tamanhos. A flor consiste de uma cabeça floral cercada por várias pétalas delicadas. Estas flores vêm em vários tons de laranja, vermelho, rosa, roxo, branco e mais. E foi declarada a flor nacional do México no ano 1963.</p>
+              <p>R$ 60,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto3" action="" method="post">
+                <input type="number" name="qtdProduto3" min="0" id="qtdProduto3" class="form-control"><br>
+                <button id="enviarCarrinho3" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="img/orquidea.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Orquídeas</h5>
+              <p class="card-text">As orquídeas têm uma quantidade inacreditável de variedades, mais de 25.000 espécies em 800 gêneros. Esta planta pode facilmente se adaptar ao ambiente dela e então é disponível em quase todo o mundo; algumas orquídeas têm 30 polegadas de pétalas e podem pesar cerca de uma 1kg.</p>
+              <p>R$ 65,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto4" action="" method="post">
+                <input type="number" name="qtdProduto4" min="0" id="qtdProduto4" class="form-control"><br>
+                <button id="enviarCarrinho4" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">      
+          <div class="card" style="width: 18rem;">
+            <img src="img/tulipa.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Tulipa</h5>
+              <p class="card-text">Esta planta perene com flores vistosas pertence ao gênero de Tulipa. Da Ásia à África, a tulipa é uma entre as mais cultivadas flores. E várias espécies e híbridos, desta flor excepcionalmente bonita, podem ser vistas em jardim como flores de corte ou como plantas de pote. As tulipas vêm em várias cores, assim como o formato da flor. Há mais de 100 espécies conhecidas desta incrível planta, que é sexta posição nesta seleção, das 10 flores mais bonitas do mundo.</p>
+              <p>R$ 70,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto5" action="" method="post">
+                <input type="number" name="qtdProduto5" min="0" id="qtdProduto5" class="form-control"><br>
+                <button id="enviarCarrinho5" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">       
+          <div class="card" style="width: 18rem;">
+            <img src="img/lirio.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Lírios Da Água</h5>
+              <p class="card-text">Estas flores são incrivelmente lindas que vêm com um tapete flutuante de folhagem. A floração dura cerca de 3 dias e então é substituída. As nenúfares vêm em cores variadas e são muitas vezes perfumadas. Basicamente, há 3 tipos desta flor, Nymphaeaceae ou a nenúfar comum, Nelumbo ou Lotus, e Nuphar Lutea, a flor amarela.</p>
+              <p>R$ 75,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto6" action="" method="post">
+                <input type="number" name="qtdProduto6" min="0" id="qtdProduto6" class="form-control"><br>
+                <button id="enviarCarrinho6" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form>
+            </div>
+          </div>         
+        </div>     
+      </div>
+      <br>
+
+      <div class="row">
+         
+        <div class="col-sm-4">
+          <div class="card" style="width: 18rem;">
+            <img src="img/magnolia.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Magnólia</h5>
+              <p class="card-text">E poucas coisas são tão bonitas como uma árvore de magnólia em plena floração. Nomeada após Pierre Mangol, um popular botânico, Magnólia se orgulha de mais de 200 espécies. As flores magnólia vêm em rosa, roxo ou branco, e o tamanho pode ser qualquer entre 3 a 12 polegadas em diâmetro. Esta flor é um símbolo da beleza, doçura e feminilidade. O gênero de magnólia pode ser encontrado em West Indies, sudeste como também leste da Ásia, América Central, América do norte, entre outros lugares.</p>
+              <p>R$ 75,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto7" action="" method="post">
+                <input type="number" name="qtdProduto7" min="0" id="qtdProduto7" class="form-control"><br>
+                <button id="enviarCarrinho7" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">    
+          <div class="card" style="width: 18rem;">
+            <img src="img/estrelicia.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Estrelícia</h5>
+              <p class="card-text">Esta flor exótica é conhecida como Ave do Paraíso pela sua forma, e pertence à família Strelitiaceae, sendo segunda posição nesta seleção das 10 flores mais bonitas do mundo. Com seu formato único e cores vibrantes, esta flor sem dúvida se destaca por tamanha beleza, e é multicolorida, sem cheiro.</p>
+              <p>R$ 80,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto8" action="" method="post">
+                <input type="number" name="qtdProduto8" min="0" id="qtdProduto8" class="form-control"><br>
+                <button id="enviarCarrinho8" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-sm-4">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="img/rosa.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Rosas</h5>
+              <p class="card-text">Trata-se de pequena, de cheiro doce, e tem tudo que é necessário para ser a de maior beleza. E não seria errado dizer que a rosa é sinônimo de beleza e amor. Este arbusto perene arborizado pertence ao gênero Rosa. As rosas são encontradas quase em todos os lugares do planeta. Esta flor linda vem em uma variedade de cor e cada cor possui um significado diferente, por exemplo, a rosa vermelha é um símbolo do amor, enquanto a rosa amarela é da amizade. De poetas a artistas, a rosa tem sido uma fonte de inspiração para as pessoas por séculos.s</p>
+              <p>R$ 100,00</p>
+              <small>Quantidade do Produto:</small>
+              <form id="produto9" action="" method="post">
+                <input type="number" name="qtdProduto9" min="0" id="qtdProduto9" class="form-control"><br>
+                <button id="enviarCarrinho9" class="btn btn-primary btn-block" type="submit">Enviar para o Carrinho</button>
+              </form> 
+            </div>
+          </div>
+          
+        </div>
+          
+      </div>
+    </div>
+
+    <div id="resposta"></div>
+    <br><br>
+
+  <!-- Footer -->
+    <div class="rodape">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="row">
+              <div class="col-sm-4">
+                <a target="_blanck" href="https://www.facebook.com/">
+                  <img src="img/face2.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a target="_blanck" href="https://www.instagram.com/">
+                  <img src="img/insta.png">
+                </a>
+              </div>
+              <div class="col-sm-4">
+                <a target="_blanck" href="https://twitter.com/">
+                  <img src="img/tw.png">
+                </a>
+              </div>
+            </div>  
+          </div>
+          <div class="col-sm-4">
+            
+          </div>
+          <div class="col-sm-4 texto-rodape">
+            <p class=" text-center">Feito por Vinícius, Vitor, Gabriel e Pedro</p>
+          </div>
+        </div>    
+      </div>
+    </div>
+
+	</body>	     
+</html>
+<script>
+    $(document).ready(function() {
+
+      //PRODUTO 1 ------------------------------------------------------------------
+
+      $('#enviarCarrinho1').click(function(){
+
+        var prod1 = $('#produto1').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod1,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 2 ------------------------------------------------------------------------------------
+      $('#enviarCarrinho2').click(function(){
+
+        var prod2 = $('#produto2').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod2,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 3 --------------------------------------------------------------
+
+      $('#enviarCarrinho3').click(function(){
+
+        var prod3 = $('#produto3').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod3,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 4 --------------------------------------------------------------
+
+      $('#enviarCarrinho4').click(function(){
+
+        var prod4 = $('#produto4').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod4,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 5 ----------------------------------------------------------------------------------
+      $('#enviarCarrinho5').click(function(){
+
+        var prod5 = $('#produto5').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod5,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 6 ------------------------------------------------------------------------------------
+      $('#enviarCarrinho6').click(function(){
+
+        var prod6 = $('#produto6').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod6,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+      //PRODUTO 7 -------------------------------------------------------------------------------------
+      $('#enviarCarrinho7').click(function(){
+
+        var prod7 = $('#produto7').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod7,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+
+      //PRODUTO 8 ---------------------------------------------------------------------------------------
+      $('#enviarCarrinho8').click(function(){
+
+        var prod8 = $('#produto8').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod8,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+
+      //PRODUTO 9 -----------------------------------------------------------------------------------
+      $('#enviarCarrinho9').click(function(){
+
+        var prod9 = $('#produto9').serialize();
+        
+        $.ajax({
+
+          method:'POST',
+          url: 'produtos.php',
+          data: prod9,
+          
+
+          beforeSend: function(){
+            $('#resposta').html("Carregando...");
+          }
+        }) 
+
+        .done(function(){
+          $('#add').remove();
+          $('#resposta').html('<h1 class="text-center">Produto Enviado com sucesso!!</h1> <br> <a href="carrinho.html" class="btn btn-primary mb rounded mx-auto d-block ">Ir para o carrinho</a>');
+        })
+        .fail(function(){
+          $('#resposta').html("ERRO AO ENVIAR O PRODUTO!!");
+        })
+        
+        return false;
+      });
+
+    });
+
+</script>
